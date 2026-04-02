@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,500&display=swap');
+
+:root{
+    --back: white;
+    --front: black;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--front);
+    
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size: 1rem;
+    
+    box-sizing: border-box;
+    
+    --light-text: color-mix(in srgb, var(--back), var(--front));
+    --code-bg: color-mix(in srgb, var(--back) 85%, var(--front));
+}
+
+*:disabled{
+    opacity: 0.3;
+    &:hover{
+        background: var(--back);
+        color: var(--base);
+        cursor: not-allowed;
+    }
+}
+
+html{
+    background: var(--back);
+    height: 100%;
+}
+
+
+h1,h2,h3,h4,h5{
+    font-family: "EB Garamond", serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+
+
+
+b,strong{
+    font-weight: 700;
+}
+
+
+i,em{
+    font-style: italic;
+}
+
+a {
+    font-style: italic;
+    text-decoration: underline;
+    &:hover{
+        font-weight: 700;
+    }
+}
+
+button{
+    background-color: var(--back);
+    border: 1px solid var(--front);
+    padding: 0.1ch 0.5ch;
+    &:hover{
+        cursor: pointer;
+        background-color: var(--front);
+        color: var(--back);
+    }
+}
+
+input[type="text"],input[type="password"]{
+    border: 1px solid var(--front);
+    padding: 0.2ch 0.5ch;
+    outline: none;
+    &::placeholder{
+        color: var(--light-text);
+    }
+    background-color: var(--back);
+}
+
+
+@font-face {
+  font-family: 'pass';
+  font-style: normal;
+  font-weight: 400;
+  src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAASAAAsAAAAABDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgLxEw6mNtYXAAAAFoAAAAVAAAAFTahkwlZ2FzcAAAAbwAAAAIAAAACAAAABBnbHlmAAABxAAAAHgAAAB4GupDKGhlYWQAAAI8AAAANgAAADYsvE/ZaGhlYQAAAnQAAAAkAAAAJAV8A8ZobXR4AAACmAAAABQAAAAUB+IAAGxvY2EAAAKsAAAADAAAAAwAKABQbWF4cAAAArgAAAAgAAAAIAAHABJuYW1lAAAC2AAAAYYAAAGGmUoJ+3Bvc3QAAARgAAAAIAAAACAAAwAAAAMB8QGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAQAAAJc8DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADgAAAAKAAgAAgACAAEAICXP//3//wAAAAAAICXP//3//wAB/+PaNQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAA/8AAAAPAAAIAADc5AQAAAAABAAD/wAAAA8AAAgAANzkBAAAAAAEAAP/AAAADwAACAAA3OQEAAAAAAQAA/8ABugPAAA8AADcnNyc3FzUzFTcXBxcHJweLLWKeEZ46nhGeYi1jY9YhhzQ1M6urMzU0hyGIiAAAAQAAAAEAAE4F4yFfDzz1AAsEAAAAAADl8YWuAAAAAOXxha4AAP/AAboDwAAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAAAABugABAAAAAAAAAAAAAAAAAAAABQQAAAAAAAAAAAAAAAIAAAAB4gAAAAAAAAAKABQAHgA8AAEAAAAFABAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAHAAAAAQAAAAAAAgAHAGAAAQAAAAAAAwAHADYAAQAAAAAABAAHAHUAAQAAAAAABQALABUAAQAAAAAABgAHAEsAAQAAAAAACgAaAIoAAwABBAkAAQAOAAcAAwABBAkAAgAOAGcAAwABBAkAAwAOAD0AAwABBAkABAAOAHwAAwABBAkABQAWACAAAwABBAkABgAOAFIAAwABBAkACgA0AKRpY29tb29uAGkAYwBvAG0AbwBvAG5WZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBpY29tb29uAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG5SZWd1bGFyAFIAZQBnAHUAbABhAHJpY29tb29uAGkAYwBvAG0AbwBvAG5Gb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff');
+}
+input[type="password"]{
+    font-family: 'pass', 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 1.21rem;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 2ch;
+    height: 2ch;
+    border: 1px solid var(--front);
+    background-color: var(--back);
+    cursor: pointer;
+    position: relative;
+    &:checked {
+        background-color: var(--front);
+        &::after{
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-size: 1rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    
+    width: 0.85rem;
+    height: 0.85rem;
+    margin-top: 0.25rem;
+    margin-left: 0.125rem;
+    border: 1px solid var(--front);
+    background-color: var(--back);
+    border-radius: 50%;
+    cursor: pointer;
+    &:checked {
+        background-color: var(--front);
+    }
+}
+
+
+
+
+ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+ol {
+    list-style: none;
+    counter-reset: mon-compteur;
+    padding-left: ch;
+}
+ol li {
+    counter-increment: mon-compteur;
+    position: relative;
+}
+ol li::before {
+    content: counter(mon-compteur); 
+    text-align: right;
+    padding-right: 1ch;
+}
+
+ul {
+    list-style: none;
+    li{
+        padding-left: 1ch;
+        margin-left: 1ch;
+        &::marker {
+            content: "*"; 
+            color: var(--back);
+        }
+    }
+}
+
+small{
+    font-size: 0.7rem;
+}
+
+legend{
+    color: var(--light-text);
+    font-style: italic;
+}
+
+
+hr{
+    border: none;
+    width: fit-content;
+    &::after{
+        content: "* * *";
+    }
+    margin: 0 auto;
+}
+
+code {
+    padding: 0ch 1ch;
+    background-color: var(--code-bg);
+}
+
+
+blockquote{
+    padding-top: 1ch;
+    
+    p::before{
+        content: "“";
+        font-family: "EB Garamond", serif;
+        font-size: 3ch;
+    };
+}
+cite{
+    font-style: italic;
+}
+
+table{
+    border-collapse: collapse; /* C'est la valeur par défaut */
+    border-spacing: 0;
+    tr{
+        th,td{
+            padding: 0.2ch 1ch;
+            border: 1px solid var(--front);
+        }
+        th{
+            text-align: left;
+            font-weight: 700;
+        }
+    }
+}
