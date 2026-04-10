@@ -188,7 +188,7 @@ ul {
         margin-left: 1ch;
         &::marker {
             content: "*"; 
-            color: var(--back);
+            color: var(--front);
         }
     }
 }
