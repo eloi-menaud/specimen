@@ -101,6 +101,9 @@ input[type="text"],input[type="password"]{
     &::placeholder{
         color: var(--light-text);
         font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
     }
     background-color: var(--back);
 }
