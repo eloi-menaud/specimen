@@ -93,10 +93,7 @@ input,
 select,
 textarea,
 optgroup {
-  font: inherit;
-  letter-spacing: inherit;
-  word-spacing: inherit;
-  text-transform: none;
+  font-size: inherit;
 }
 
 button{
