@@ -21,7 +21,7 @@
     box-sizing: border-box;
     
     --light-text: color-mix(in srgb, var(--back), var(--front));
-    --code-bg: color-mix(in srgb, var(--back) 85%, var(--front));
+    --code-bg: color-mix(in srgb, var(--back) 90%, var(--front));
 
     --container-padding: 0.5ch 1ch
 }
@@ -116,10 +116,6 @@ input[type="password"]{
     outline: none;
     &::placeholder{
         color: var(--light-text);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1rem;
     }
     background-color: var(--back);
 }
